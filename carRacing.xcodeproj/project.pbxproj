@@ -17,6 +17,9 @@
 		6E5E681A1FF5836400BCDB92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5E68181FF5836400BCDB92 /* LaunchScreen.storyboard */; };
 		6E5E68251FF5836400BCDB92 /* carRacingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5E68241FF5836400BCDB92 /* carRacingTests.swift */; };
 		6E5E68301FF5836400BCDB92 /* carRacingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5E682F1FF5836400BCDB92 /* carRacingUITests.swift */; };
+		6E5E683E1FF5838200BCDB92 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5E683D1FF5838200BCDB92 /* Background.swift */; };
+		6E5E68401FF597D500BCDB92 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5E683F1FF597D500BCDB92 /* Player.swift */; };
+		6E909A4B1FF99FDF00740E66 /* joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E909A4A1FF99FDF00740E66 /* joystick.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		6E5E682B1FF5836400BCDB92 /* carRacingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carRacingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5E682F1FF5836400BCDB92 /* carRacingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carRacingUITests.swift; sourceTree = "<group>"; };
 		6E5E68311FF5836400BCDB92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5E683D1FF5838200BCDB92 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		6E5E683F1FF597D500BCDB92 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		6E909A4A1FF99FDF00740E66 /* joystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = joystick.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 				6E5E680D1FF5836400BCDB92 /* Actions.sks */,
 				6E5E680F1FF5836400BCDB92 /* GameScene.swift */,
 				6E5E68111FF5836400BCDB92 /* GameViewController.swift */,
+				6E5E683D1FF5838200BCDB92 /* Background.swift */,
+				6E5E683F1FF597D500BCDB92 /* Player.swift */,
+				6E909A4A1FF99FDF00740E66 /* joystick.swift */,
 				6E5E68131FF5836400BCDB92 /* Main.storyboard */,
 				6E5E68161FF5836400BCDB92 /* Assets.xcassets */,
 				6E5E68181FF5836400BCDB92 /* LaunchScreen.storyboard */,
@@ -276,6 +285,9 @@
 				6E5E68101FF5836400BCDB92 /* GameScene.swift in Sources */,
 				6E5E68121FF5836400BCDB92 /* GameViewController.swift in Sources */,
 				6E5E680A1FF5836400BCDB92 /* AppDelegate.swift in Sources */,
+				6E5E68401FF597D500BCDB92 /* Player.swift in Sources */,
+				6E5E683E1FF5838200BCDB92 /* Background.swift in Sources */,
+				6E909A4B1FF99FDF00740E66 /* joystick.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = joeythaman.carRacing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -448,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = joeythaman.carRacing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -528,6 +542,7 @@
 				6E5E68361FF5836400BCDB92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E5E68371FF5836400BCDB92 /* Build configuration list for PBXNativeTarget "carRacingTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +551,7 @@
 				6E5E68391FF5836400BCDB92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E5E683A1FF5836400BCDB92 /* Build configuration list for PBXNativeTarget "carRacingUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +560,7 @@
 				6E5E683C1FF5836400BCDB92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

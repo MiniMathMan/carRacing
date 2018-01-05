@@ -9,19 +9,24 @@
 import SpriteKit
 import GameplayKit
 
+let gap:CGFloat = 50
+var screenWidth:CGFloat = 0
+var screenHeight:CGFloat = 0
+
 class GameScene: SKScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
+    private var background:SKNode?
     
     override func didMove(to view: SKView) {
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
+        width = self.size.width
+        height = self.size.height
+        
+        self.anchorPoint = CGPoint(x:0,y:0)
+        
+        
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
@@ -35,6 +40,12 @@ class GameScene: SKScene {
                                               SKAction.fadeOut(withDuration: 0.5),
                                               SKAction.removeFromParent()]))
         }
+        
+        self.background = Background(w: self.size.width,h: self.size.height,g:gap)
+        self.addChild(self.background!)
+        
+        let player = Player(xPos:0,yPos:0)
+        self.addChild(player)
     }
     
     
